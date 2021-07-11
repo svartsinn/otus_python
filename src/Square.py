@@ -1,8 +1,7 @@
-from src.Figure import Figure
+from src.Rectangle import Rectangle
 
 
-class Square(Figure):
+class Square(Rectangle):
     def __init__(self, size):
+        super().__init__(width=size, height=None)
         self.name = 'Square'
-        self.area = size ** 2
-        self.perimeter = 4 * size
